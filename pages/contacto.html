@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Proyecto Independent</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../img/logo.png" alt="logo pagina"> 
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/galeria.html">Galeria</a></li>
+                <li><a href="../pages/cursos.html">Cursos</a></li>
+                <li><a href="../pages/envios.html">Envios</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+
+
+    <main class="alinear_contacto">
+        <h3 class="texto_contacto animate__animated animate__pulse">Contáctanos</h3>  
+        <div class="contacto_imagen"></div>
+    
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo-label" >Nombre</label>
+                <input class="input-estilo" type="text" placeholder="Tu Nombre">
+            </div>
+
+            <div class="campo">
+                <label class="campo-label" >E-mail</label>
+                <input class="input-estilo" type="email" placeholder="Tu Correo-Electronico">
+            </div>
+
+            <div class="campo">
+                <label class="campo-label">Mensaje</label>
+                
+                <textarea class="input-estilo  texto-modificador" placeholder="Dejanos tu consulta"></textarea>
+            </div>
+                
+            <div class="ubicacion-boton">
+                <input class="boton-contacto" type="submit" value="Enviar Datos">
+            </div>
+        </form>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="redes_sociales"">
+            <img src="../img/instagram-logo-24.png" alt="logo instagram" width="50px">
+            <img src="../img/twitter-logo-24.png" alt="logo twitter" width="50px">
+            <img src="../img/discord-alt-logo-24.png" alt="logo discord" width="50px">
+        </div>
+    
+        <div class="textFooter">
+            <p>Todos los derechos reservados 2022</p>
+        </div>
+    </footer>
+
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new wow().init();
+    </script>
+</body>
+</html>

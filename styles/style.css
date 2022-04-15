@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********* NAVEGACION - HEADER *********/ 
+
+body {
+    background-color: rgba(238, 236, 236, 0.89);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    text-align: right;
+    gap: 2rem;
+    margin-right: 40px;
+}
+.header {
+    width: 100%;
+    height: 125px;
+    background-color: rgba(5, 2, 2, 0.836);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0 2rem;
+
+}
+.logo {
+    max-width: 100%;
+    width: 6rem;
+    margin: 0 5rem;
+
+}
+
+a:hover {
+    color: #f7b32cce;
+    text-decoration: overline;
+}
+
+
+
+/*********** IMAGEN PRINCIPAL-PORTADA ***********/
+
+
+.luano{
+    background-image: url(../img/luan\ oliveira.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.textoPrincipal {
+    color: rgba(5, 2, 2, 0.836);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 17rem;
+}
+
+.luano p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgba(5, 2, 2, 0.836);
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+
+/***************** SECCION HOME ******************/
+
+.texto_performance{
+    font-family: 'Roboto', sans-serif;
+    margin: 6rem 15rem;
+    font-size: 22px;
+    text-align: end;
+}
+
+.nombre_Ryan {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 7rem;
+    margin-top: 6rem;
+}
+
+.img_ryan {
+    border-radius: 70%;
+    margin-left: 5rem;
+    height: 300px;
+    box-shadow: 8px 11px 10px rgb(0 0 0 / 20%);
+}
+
+
+.grilla-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 140px 800px;
+    grid-template-areas: 
+    "titulo1 titulo2 titulo2"
+    "rostro testimonio1 video";
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.imagen1 {
+    grid-area: rostro;
+}
+
+.testimonio1 {
+    grid-area: testimonio1;
+}
+
+.video {
+    grid-area: video;
+}
+
+.testimonio {
+    font-family: 'Open Sans', sans-serif;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+iframe {
+    border-radius: 5%;
+    box-shadow: 5px 11px 10px rgb(0 0 0 / 20%);
+    margin-left: 20rem;
+}
+
+
+/******************** Footer ********************/
+
+.footer {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(5, 2, 2, 0.836);
+}
+
+.redes_sociales {
+    display: flex;
+    gap: 4rem;
+    background-color: transparent;
+    padding-left: 4rem;
+}
+
+.textFooter {
+    text-align: right;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 4rem;
+}
+
+/******************* GALERIA **********************/
+
+.body_galeria{
+    background-color: rgba(238, 236, 236, 0.89);
+}
+.galeria {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6"
+    "foto7 foto8 foto9";
+    gap: 1rem;
+    margin-bottom: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+.foto3 {
+    grid-area: foto3;
+}
+.foto4 {
+    grid-area: foto4;
+}
+.foto5 {
+    grid-area: foto5;
+}
+.foto6 {
+    grid-area: foto6;
+}
+.foto7 {
+    grid-area: foto7;
+}
+.foto8 {
+    grid-area: foto8;
+}
+.foto9 {
+    grid-area: foto9;
+}
+
+.tamaño__img1, .tamaño__img2, .tamaño__img3, .tamaño__img4, .tamaño__img5, .tamaño__img6, .tamaño__img7, .tamaño__img8{
+    width: 300px;
+    border-radius: 5%;
+    border: solid 1px black;
+}
+
+/******************** SECCION CURSOS ********************/
+
+.alinear_curso{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 4rem auto;
+    font-size: 30px;
+}
+
+.cursos_contenedor {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "pic1 detalle1"
+    "pic2 detalle2";
+    margin: 0 4rem;
+    margin-bottom: 10rem;
+    gap: 3rem;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.detalle1 {
+    grid-area: detalle1;
+}
+
+.pic2{
+    grid-area: pic2;
+}
+
+.detalle2 {
+    grid-area: detalle2;
+}
+
+.curso {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.tamaño__img{
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto-cursos{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.texto-cursos h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ubicacion-boton-cursos {
+    padding-top: 2rem;
+}
+
+
+
+
+/*************** SECCION ENVIOS *******************/
+
+.portada__envios{
+    background-image: url(../img/imagenportada.jpg);
+    height: 45rem;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 14px 10px rgb(0 0 0 / 20%);
+}
+
+.texto-envios {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #f7b32cce;
+    margin-top: 17rem;
+}
+
+.portada__envios p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #f7b32cce;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "card1 card2 card3 card4";
+    max-width: 80rem;
+    margin: 10rem auto;
+    justify-items: center;
+}
+
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+
+.estilo_carta {
+    background-color: rgba(5, 2, 2, 0.836);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.img_envios {
+    width: 100%;
+}
+
+.texto__carta{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+
+/******************* SECCION CONTACTO ******************/ 
+
+.alinear_contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.texto_contacto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5rem;
+}
+
+.contacto_imagen{
+    background-image: url(../img/imagen1.jpg);
+    width: 70rem;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 3rem 2rem;
+}
+
+
+/******************* FROMULARIO CONTACTO *******************/
+
+.formulario {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: -5rem;
+    margin-bottom: 18rem;
+}
+
+.campo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo-label{
+    text-align: right;
+    padding-right: 2rem;
+    width: 100px;
+}
+
+.input-estilo {
+    width: 100%;
+    border: 1px solid gray;
+    height: 2rem;
+}
+
+.texto-modificador{
+    height: 15rem;
+}
+
+.ubicacion-boton{
+    text-align: right;
+}
+
+.boton-contacto {
+    padding: 1rem;
+    background-color: rgba(5, 2, 2, 0.836);
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton-contacto:hover {
+    background-color: #f7b32cce;
+    color: black;
+}
+
+
+/********************** MEDIA QUERIES ***************************/
+
+@media screen and (max-width: 768px) {
+    
+ /*********** NAVEGACION ************/
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo {
+        width: 5rem;
+        margin-top: 1rem;
+    }
+    nav ul {
+        margin-top: 2rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .luano{
+        background-position: center center;
+    }
+
+    .textoPrincipal {
+        font-size: 25px;
+    }
+
+    .luano p {
+        margin-top: 1rem;
+    }
+
+    /*********** MENU PRINCIPAL ***********/
+
+    .grilla-main {
+        grid-template-columns: 100%;   
+        grid-template-rows: 60px;
+        grid-template-areas: 
+        "titulo1" 
+        "rostro" 
+        "testimonio1"
+        "titulo2"
+        "video";
+        row-gap: 2rem;
+    }
+
+    .titulo1 {
+        margin-left: 0rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .imagen1 {
+        margin-left: 0rem;
+        height: 250px;
+        justify-self: center;
+        
+    }
+    .testimonio1 {
+        margin-left: 0rem;
+        justify-self: center;
+        height: auto;
+        width: auto;
+    }
+    .titulo2 {
+        margin: 0rem;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .video { 
+        margin-left: 0rem;
+        width: 80%;
+        justify-self: center;
+        margin-bottom: 3rem;
+    }
+
+    /******** SECCION GALERIA **********/ 
+
+    .contenedor {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "foto1 foto2" 
+        "foto3 foto4" 
+        "foto5 foto6"
+        "foto7 foto8" 
+        "foto9 foto9";
+        gap: 1rem;
+        margin-bottom: 5rem;
+         justify-items: center;
+        align-items: center; 
+    }
+
+    /********* SECCION ENVIOS *********/
+
+    .portada__envios{
+        background-position: center center;
+    }
+
+    .cartas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "card1 card2" 
+        "card3 card4";
+        row-gap: 1rem;
+    }
+
+    /******** SECCION CURSOS ***********/
+
+    .cursos_contenedor {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "pic1 detalle1"
+        "pic2 detalle2";
+        margin: 0 4rem;
+        margin-bottom: 10rem;
+        gap: 3rem;
+        text-align: center;
+    }
+    .tamaño__img{
+        width: 300px;
+    }
+
+
+    /********* FOOTER ********/
+    .footer {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .redes_sociales {
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0rem;
+        margin-top: 2rem;
+    }
+    
+    .textFooter {
+        text-align: center;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        padding-right: 0rem;
+        padding-top: 2rem;
+    }
+
+    .contacto_imagen{
+        width: 90%;
+        background-position: center center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    /*** NAVEGACION ***/
+    .textoPrincipal {
+        font-size: 25px;
+    }
+        nav ul {
+        flex-direction: column;   
+        text-align: center;
+        gap: 10px;
+        margin-top: 1rem;
+        
+    }
+
+    /*** MENU CONTENIDO ***/
+    .grilla-main {
+        grid-template-columns: 100%;   
+        grid-template-rows: 60px;
+        grid-template-areas: 
+        "titulo1" 
+        "rostro" 
+        "testimonio1"
+        "titulo2"
+        "video";
+        row-gap: 2rem;
+    }
+
+    /*** GALERIA ***/
+    .contenedor {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "foto1"
+        "foto2" 
+        "foto3" 
+        "foto4" 
+        "foto5" 
+        "foto6"
+        "foto7" 
+        "foto8" 
+        "foto9";
+        gap: 1rem;
+        margin-bottom: 5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    /*** ENVIOS ***/
+
+    .cartas {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card1" 
+        "card2" 
+        "card3" 
+        "card4";
+        row-gap: 1rem;
+    }
+
+    .texto-envios{
+        text-align: center;
+    }
+
+    /*** CURSOS ***/ 
+
+    .cursos_contenedor {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "pic1"
+        "detalle1"
+        "pic2" 
+        "detalle2";
+        margin-bottom: 5rem;
+        gap: 0rem;
+    }
+    .tamaño__img{
+        width: 300px;
+    }
+    .ubicacion-boton-cursos {
+        padding-top: 2rem;
+    }
+
+    /*** CONTACTO ***/
+
+    .contacto_imagen{
+        width: 90%;
+        background-position: center center;
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
