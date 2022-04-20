@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -6,27 +8,16 @@
 
 /********* NAVEGACION - HEADER *********/ 
 
-body {
-    background-color: rgba(238, 236, 236, 0.89);
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
 }
 
-nav ul li {
-    list-style: none;
-}
-
-nav ul {
-    display: flex;
-    text-align: right;
-    gap: 2rem;
-    margin-right: 40px;
-}
-.header {
-    width: 100%;
-    height: 125px;
+.navbar-light{
     background-color: rgba(5, 2, 2, 0.836);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
 
 a {
@@ -35,18 +26,21 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     margin: 0 2rem;
-
 }
 .logo {
-    max-width: 100%;
     width: 6rem;
-    margin: 0 5rem;
-
+    margin: 0 4rem;
 }
 
-a:hover {
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #f7b32cce;
     text-decoration: overline;
+}
+
+.navbar-light .navbar-toggler{
+    border: solid 2px;
+    border-color: white;
+    border-radius: 10%;
 }
 
 
@@ -94,8 +88,10 @@ a:hover {
 
 .nombre_Ryan {
     font-family: 'Roboto', sans-serif;
+    font-size: 25px;
     margin-left: 7rem;
     margin-top: 6rem;
+
 }
 
 .img_ryan {
@@ -152,10 +148,10 @@ iframe {
 
 /******************** Footer ********************/
 
-.footer {
+.footer{
+    display: flex;
     width: 100%;
     height: 125px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(5, 2, 2, 0.836);
@@ -163,9 +159,9 @@ iframe {
 
 .redes_sociales {
     display: flex;
-    gap: 4rem;
+    gap: 8rem;
     background-color: transparent;
-    padding-left: 4rem;
+    padding-left: 10rem;
 }
 
 .textFooter {
@@ -173,6 +169,34 @@ iframe {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     padding-right: 4rem;
+}
+
+i {
+    font-size: 30px;
+}
+
+.bi-instagram {
+    color: white;
+}
+
+.bi-instagram:hover {
+    color: #C13584;
+}
+
+.bi-twitter {
+    color: white;
+}
+
+.bi-twitter:hover {
+    color: #00acee;
+}
+
+.bi-facebook {
+    color: white;
+}
+
+.bi-facebook:hover {
+    color: #3b5998;
 }
 
 /******************* GALERIA **********************/
@@ -306,6 +330,19 @@ span {
     padding-top: 2rem;
 }
 
+.boton-contacto{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.boton-contacto:hover {
+    background-color:  #f7b32cce;
+    color: black;
+}
 
 
 
@@ -393,72 +430,48 @@ span {
     text-align: center;
     font-size: 40px;
     margin-top: 5rem;
+    margin-bottom: 4rem;
 }
 
-.contacto_imagen{
-    background-image: url(../img/imagen1.jpg);
-    width: 70rem;
-    height: 40rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 3rem 2rem;
+.contacto__imagen{
+    width: 90vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+/******************* FORMULARIO CONTACTO *******************/
 
-/******************* FROMULARIO CONTACTO *******************/
 
-.formulario {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+fieldset {
+    margin: -5rem;
+    margin-bottom: 10rem;
     background-color: white;
-    border-radius: 15px;
+    width: 1000px;
     padding: 2rem;
-    margin-top: -5rem;
-    margin-bottom: 18rem;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.campo {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
+legend {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
-.campo-label{
-    text-align: right;
-    padding-right: 2rem;
-    width: 100px;
+.form-control:enabled {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
 }
-
-.input-estilo {
-    width: 100%;
-    border: 1px solid gray;
-    height: 2rem;
-}
-
-.texto-modificador{
-    height: 15rem;
-}
-
-.ubicacion-boton{
-    text-align: right;
-}
-
-.boton-contacto {
-    padding: 1rem;
-    background-color: rgba(5, 2, 2, 0.836);
-    color: white;
+.btn:enabled, fieldset:enabled .btn{
+    background-color: black;
+    opacity: 1;
     border: none;
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-
-.boton-contacto:hover {
-    background-color: #f7b32cce;
-    color: black;
+.form-check-input:enabled~.form-check-label, .form-check-input[enabled]~.form-check-label{
+    opacity: 1;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2rem;
 }
-
 
 /********************** MEDIA QUERIES ***************************/
 
@@ -587,35 +600,39 @@ span {
     }
 
 
-    /********* FOOTER ********/
-    .footer {
-        flex-direction: column;
-        height: auto;
+    /********* SECCION CONTACTO ********/
+      fieldset {
+        text-align: center;
         width: auto;
     }
 
-    .redes_sociales {
-        flex-direction: column;
-        gap: 1rem;
-        padding-left: 0rem;
-        margin-top: 2rem;
-    }
+        /********* FOOTER ********/
+        .footer {
+            flex-direction: column;
+            height: auto;
+            width: auto;
+        }
     
-    .textFooter {
-        text-align: center;
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        padding-right: 0rem;
-        padding-top: 2rem;
-    }
-
-    .contacto_imagen{
-        width: 90%;
-        background-position: center center;
-    }
-}
-
-
+        .redes_sociales {
+            flex-direction: column;
+            gap: 1rem;
+            padding-left: 0rem;
+            margin-top: 2rem;
+        }
+        
+        .textFooter {
+            text-align: center;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            padding-right: 0rem;
+            padding-top: 2rem;
+        }
+    
+        .contacto_imagen{
+            width: 90%;
+            background-position: center center;
+        }
+}  
 
 
 
@@ -709,13 +726,11 @@ span {
 
     .contacto_imagen{
         width: 90%;
-        background-position: center center;
+        background-position: center;
     }
 
-    .campo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    fieldset {
+        text-align: center;
+        width: auto;
     }
-
 }
