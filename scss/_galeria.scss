@@ -1,0 +1,64 @@
+/******************* GALERIA **********************/
+
+.body_galeria{
+    background-color: rgba(238, 236, 236, 0.89);
+}
+.galeria {
+    text-align: center;
+    font-family: $fuentePrincipal;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6"
+    "foto7 foto8 foto9";
+    gap: 1rem;
+    margin-bottom: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+.foto3 {
+    grid-area: foto3;
+}
+.foto4 {
+    grid-area: foto4;
+}
+.foto5 {
+    grid-area: foto5;
+}
+.foto6 {
+    grid-area: foto6;
+}
+.foto7 {
+    grid-area: foto7;
+}
+.foto8 {
+    grid-area: foto8;
+}
+.foto9 {
+    grid-area: foto9;
+}
+
+.tamaño__img1, .tamaño__img2, .tamaño__img3, .tamaño__img4, .tamaño__img5, .tamaño__img6, .tamaño__img7, .tamaño__img8{
+    width: 300px;
+    border-radius: 5%;
+    border: solid 1px black;
+}

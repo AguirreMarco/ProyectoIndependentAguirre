@@ -1,0 +1,99 @@
+/*********** IMAGEN PRINCIPAL-PORTADA ***********/
+
+
+.luano{
+    background-image: url(../img/olivera.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 14px 10px rgba(0, 0, 0, 0.226);
+}
+
+.textoPrincipal {
+    color: rgba(5, 2, 2, 0.836);
+    font-size: 2rem;
+    font-family: $fuentePrincipal;
+    text-align: center;
+    margin-top: 17rem;
+}
+
+.luano p {
+    font-family: $fuentePrincipal;
+    text-align: center;
+    color: rgba(5, 2, 2, 0.836);
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+
+/***************** SECCION HOME ******************/
+
+.texto_performance{
+    font-family: $fuentePrincipal;
+    margin: 6rem 15rem;
+    font-size: 22px;
+    text-align: end;
+}
+
+.nombre_Ryan {
+    font-family: $fuentePrincipal;
+    font-size: 25px;
+    margin-left: 7rem;
+    margin-top: 6rem;
+
+}
+
+.img_ryan {
+    border-radius: 70%;
+    margin-left: 5rem;
+    height: 300px;
+    box-shadow: 3px 14px 10px rgba(0, 0, 0, 0.226);
+}
+
+
+.grilla-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 140px 800px;
+    grid-template-areas: 
+    "titulo1 titulo2 titulo2"
+    "rostro testimonio1 video";
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.imagen1 {
+    grid-area: rostro;
+}
+
+.testimonio1 {
+    grid-area: testimonio1;
+}
+
+.video {
+    grid-area: video;
+}
+
+.testimonio {
+    font-family: $fuenteSecundaria;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+iframe {
+    border-radius: 5%;
+    box-shadow: 3px 14px 10px rgba(0, 0, 0, 0.226);
+    margin-left: 20rem;
+}

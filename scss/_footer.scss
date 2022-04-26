@@ -1,0 +1,52 @@
+/******************** Footer ********************/
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 125px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(5, 2, 2, 0.836);
+}
+
+.redes_sociales {
+    display: flex;
+    gap: 8rem;
+    background-color: transparent;
+    padding-left: 10rem;
+}
+
+.textFooter {
+    text-align: right;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 4rem;
+}
+
+i {
+    font-size: 30px;
+}
+
+.bi-instagram {
+    color: white;
+}
+
+.bi-instagram:hover {
+    color: #C13584;
+}
+
+.bi-twitter {
+    color: white;
+}
+
+.bi-twitter:hover {
+    color: #00acee;
+}
+
+.bi-facebook {
+    color: white;
+}
+
+.bi-facebook:hover {
+    color: #3b5998;
+}

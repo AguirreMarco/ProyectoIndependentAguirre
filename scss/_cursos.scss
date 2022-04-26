@@ -1,0 +1,79 @@
+/******************** SECCION CURSOS ********************/
+
+.alinear_curso{
+    text-align: center;
+    font-family: $fuentePrincipal;
+    margin: 4rem auto;
+    font-size: 30px;
+}
+
+.cursos_contenedor {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "pic1 detalle1"
+    "pic2 detalle2";
+    margin: 0 4rem;
+    margin-bottom: 10rem;
+    gap: 3rem;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.detalle1 {
+    grid-area: detalle1;
+}
+
+.pic2{
+    grid-area: pic2;
+}
+
+.detalle2 {
+    grid-area: detalle2;
+}
+
+.curso {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.tamaño__img{
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto-cursos{
+    font-family: $fuenteSecundaria;
+    font-size: 20px;
+}
+
+.texto-cursos h3{
+    font-family: $fuentePrincipal;
+}
+
+span {
+    font-family: $fuentePrincipal;
+}
+
+.ubicacion-boton-cursos {
+    padding-top: 2rem;
+}
+
+.boton-contacto{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: $fuentePrincipal;
+}
+
+.boton-contacto:hover {
+    background-color:  $color-secundario;
+    color: black;
+}

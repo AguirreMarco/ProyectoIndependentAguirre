@@ -1,0 +1,56 @@
+/******************* SECCION CONTACTO ******************/ 
+
+.alinear_contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.texto_contacto{
+    font-family: $fuenteSecundaria;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.contacto__imagen{
+    width: 90vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/******************* FORMULARIO CONTACTO *******************/
+
+
+fieldset {
+    margin: -5rem;
+    margin-bottom: 10rem;
+    background-color: white;
+    width: 1000px;
+    padding: 2rem;
+    border-radius: 15px;
+    font-family: $fuentePrincipal;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-control:enabled {
+    background-color: white;
+    font-family: $fuenteSecundaria;
+}
+.btn:enabled, fieldset:enabled .btn{
+    background-color: black;
+    opacity: 1;
+    border: none;
+    text-align: center;
+}
+.form-check-input:enabled~.form-check-label, .form-check-input[enabled]~.form-check-label{
+    opacity: 1;
+    font-size: 15px;
+    font-family: $fuenteSecundaria;
+    margin-bottom: 2rem;
+}
