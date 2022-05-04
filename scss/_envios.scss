@@ -49,15 +49,6 @@
     grid-area: card4;
 }
 
-.estilo_carta {
-    background-color: $color-principal;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 250px;
-    height: 400px;
-    border-radius: 10px;
-}
-
 .img_envios {
     width: 100%;
 }
@@ -65,4 +56,18 @@
 .texto__carta{
     font-family: $fuenteSecundaria;
     color: white;
+}
+
+
+@mixin estilo_carta ($colorCard, $borderCard, $sombraCard) {
+    background-color: $colorCard;
+    box-shadow: $sombraCard;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    border-radius: $borderCard;
+}
+
+.estilo_carta {
+    @include estilo_carta($color-principal, 10px , 2px 2px 10px rgba(0, 0, 0, 0.5))
 }

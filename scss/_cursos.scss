@@ -61,7 +61,7 @@ span {
 }
 
 .ubicacion-boton-cursos {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .boton-contacto{
@@ -72,8 +72,12 @@ span {
     border-radius: 5px;
     font-family: $fuentePrincipal;
 }
+.boton-obtener {
+    @extend .boton-contacto;
+}
 
 .boton-contacto:hover {
     background-color:  $color-secundario;
     color: black;
 }
+
