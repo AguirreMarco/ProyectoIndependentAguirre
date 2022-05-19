@@ -376,7 +376,7 @@ span {
 
 /******************* FORMULARIO CONTACTO *******************/
 fieldset {
-  margin: -5rem;
+  margin: -3rem;
   margin-bottom: 10rem;
   background-color: white;
   width: 1000px;
@@ -470,12 +470,15 @@ i {
   }
   .logo {
     width: 5rem;
-    margin-top: 1rem;
+    margin: 0 1rem;
   }
   nav ul {
     margin-top: 2rem;
     margin-right: 0rem;
     margin-bottom: 1rem;
+  }
+  .navbar-nav {
+    align-items: center;
   }
   .luano {
     background-position: center center;
@@ -485,6 +488,7 @@ i {
   }
   .luano p {
     margin-top: 1rem;
+    padding: 0 1rem;
   }
   /*********** MENU PRINCIPAL ***********/
   .grilla-main {
@@ -505,9 +509,8 @@ i {
   }
   .testimonio1 {
     margin-left: 0rem;
-    justify-self: center;
-    height: auto;
     width: auto;
+    padding: 0 3rem;
   }
   .titulo2 {
     margin: 0rem;
@@ -558,7 +561,8 @@ i {
   /********* SECCION CONTACTO ********/
   fieldset {
     text-align: center;
-    width: auto;
+    width: 80vw;
+    margin-top: -2rem;
   }
   /********* FOOTER ********/
   .footer {
@@ -622,6 +626,10 @@ i {
   }
   .texto-envios {
     text-align: center;
+    padding: 0 1rem;
+  }
+  .portada__envios p {
+    padding: 0 2rem;
   }
   /*** CURSOS ***/
   .cursos_contenedor {
@@ -642,8 +650,7 @@ i {
     background-position: center;
   }
   fieldset {
-    text-align: center;
-    width: auto;
+    width: 80vw;
   }
 }
 
